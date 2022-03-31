@@ -40,9 +40,17 @@ class Timer extends Component {
         const dayString = days > 1 ? 'days' : 'day';
         return (
             timeUp ?
-                <p>Baby is here in:</p>
+                <p>Baby is here!</p>
                 :
-                <p>{ `${days} ${dayString} ${hours} hours ${minutes} minutes ${seconds} seconds` }</p>
+                <div>
+                    <p>
+                        Countdown: <br></br>
+                        {`${days} ${dayString}`} <br></br>
+                        {`${hours} hours`} <br></br>
+                        {`${minutes} minutes`} <br></br>
+                        {`${seconds} seconds`}
+                    </p>
+                </div>
         );
     }
 }

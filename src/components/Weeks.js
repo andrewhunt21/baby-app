@@ -18,7 +18,12 @@ const Weeks = () => {
 
     return (
         <div>
-            <p>Currently {age.weeks} weeks {age.days} days along</p>
+            <p>
+                Baby is: <br></br>
+                {age.weeks} weeks <br></br> 
+                {age.days} days <br></br>
+                along
+            </p>
         </div>
     )
 }
